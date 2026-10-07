@@ -8,8 +8,8 @@
  * Usage: apply to any route that requires admin authentication.
  */
 
+/// <reference path="../types/express.d.ts" />
 import type { Request, Response, NextFunction } from 'express'
-import '../types/express.js'
 import jwt from 'jsonwebtoken'
 import { ApiError } from '../utils/ApiError.js'
 import { errorResponse } from '../utils/ApiResponse.js'

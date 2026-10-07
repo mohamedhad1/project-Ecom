@@ -5,8 +5,8 @@
  * Thin: reads credentials → calls service → sends response.
  */
 
+/// <reference path="../types/express.d.ts" />
 import type { Request, Response, NextFunction } from 'express'
-import '../types/express.js'
 import { validationResult } from 'express-validator'
 import { loginAdmin } from '../services/auth.service.js'
 import { successResponse } from '../utils/ApiResponse.js'
